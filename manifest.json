@@ -1,0 +1,21 @@
+{
+    "name": "Dissculator",
+    "short_name": "DissCalc",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#111111",
+    "theme_color": "#ff0055",
+    "description": "A calculator with attitude.",
+    "icons": [
+        {
+            "src": "/public/calcIcon.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/public/calcIcon512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

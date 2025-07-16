@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Digital-7";
+  src: url("./assets/fonts/digital-7.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  margin-bottom: 2em;
+}
+
+#root {
+  min-height: 95vh;
+  background: #444;
+  background: dodgerblue;
+  color: papayawhip;
+  font-size: 1.3rem;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  #root {
+    background-color: #000;
+  }
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  /* background-color: red; */
+}
+
+footer p {
+  text-align: center;
+  /* width: 100%; */
+  font-size: 0.9rem;
+}

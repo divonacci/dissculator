@@ -1,0 +1,191 @@
+.calculator__container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 1.3em auto 0;
+  border-radius: 20px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: #555;
+  border-radius: 10px;
+}
+
+.calculator__display {
+  background-color: lightslategray;
+  padding: 10px 0;
+}
+
+.calculator__display section {
+  padding: 0 0.4em;
+
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+  font-size: 1.5em;
+  height: 1.5em;
+  font-family: "Digital-7", sans-serif;
+}
+.calculator__display section input {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  text-align: right;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+.calculator__display .calculator__result {
+  text-align: right;
+}
+
+.calculator__buttons {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "C C copy backspace backspace"
+    "seven eight nine times divide"
+    "four five six plus minus"
+    "one two three abs percent"
+    "zero dot double_zero equal equal";
+  width: fit-content;
+  overflow: hidden;
+  /* mouse */
+}
+.calculator__buttons button {
+  padding: 1.2em;
+  border: 0.6px dotted #000;
+  border-radius: 2px;
+  font-size: 1em;
+  background-color: yellowgreen;
+  color: rgb(39, 0, 182);
+  font-weight: bolder;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* 
+  .calculator__buttons button:hover {
+    animation: spin 100ms linear;
+    animation-iteration-count: 1;
+    } */
+.calculator__buttons button:hover {
+  opacity: 1;
+  color: #1f1242;
+  background-color: rgb(177, 240, 51);
+}
+.calculator__buttons button:active {
+  background-color: royalblue;
+  color: #fff;
+}
+button:disabled,
+button:disabled,
+button:disabled:active {
+  opacity: 0.6;
+}
+
+button:disabled:active {
+  background-color: #400;
+}
+/* @keyframes spin {
+    from {
+      background: conic-gradient(
+        from 10deg,
+        rgb(163, 207, 235),
+        cyan,
+        #f1f384,
+        pink,
+        rgb(231, 156, 231)
+      );
+      transform: rotate(0turn);
+      border-radius: 100px;
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  } */
+.C {
+  grid-area: C;
+}
+.C:hover {
+  background-color: rgba(255, 0, 0, 0.495);
+  color: #fff;
+}
+.copy {
+  grid-area: copy;
+  /* padding: 20px; */
+}
+.percent {
+  grid-area: percent;
+}
+.abs {
+  grid-area: abs;
+}
+.divide {
+  grid-area: divide;
+}
+.backspace {
+  grid-area: backspace;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.times {
+  grid-area: times;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.minus {
+  grid-area: minus;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+  z-index: 1;
+}
+.plus {
+  grid-area: plus;
+  z-index: 1;
+}
+.zero {
+  grid-area: zero;
+}
+.double_zero {
+  grid-area: double_zero;
+}
+.dot {
+  grid-area: dot;
+}
+.equal {
+  grid-area: equal;
+  z-index: 0;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .calculator__display {
+    color: black;
+  }
+  .calculator__container .calculator__buttons button {
+    background-color: rgb(60, 167, 167);
+    color: black;
+  }
+}
