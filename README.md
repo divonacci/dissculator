@@ -20,7 +20,7 @@ It’s not just a calculator — it’s a personality.
 
 ## 🖼️ Preview
 
-![Dissculator Screenshot](https://your-app-url.vercel.app/preview.png)
+![Dissculator Screenshot](./public/preview.png)
 
 ---
 
